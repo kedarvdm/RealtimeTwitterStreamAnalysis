@@ -1,0 +1,31 @@
+New log file opened at Fri Nov 27 18:15:10 EST 2015 by 6688@Sonam-Laptop
+Taking next connection to: 43996
+New client attempting to connect on port: 39942-43996
+  Address = /127.0.1.1:43996
+This client on port 39942 has uuid 7527c218-7221-46cb-86b8-432f3790d768 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7527c218-7221-46cb-86b8-432f3790d768
+Taking next connection to: 43996
+New client attempting to connect on port: 39944-43996
+  Address = /127.0.1.1:43996
+Handshake exception on socket: 39944
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 43996
+New client attempting to connect on port: 39946-43996
+  Address = /127.0.1.1:43996
+This client on port 39946 has uuid 16d6a1cd-e14b-46d0-b973-e38dce9885bc configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7527c218-7221-46cb-86b8-432f3790d768, activator-16d6a1cd-e14b-46d0-b973-e38dce9885bc
+Taking next connection to: 43996
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 6688@Sonam-Laptop logs at Fri Nov 27 18:18:10 EST 2015, goodbye.

@@ -1,0 +1,7 @@
+raw_data = LOAD 'hbase://TwitterUser' USING org.apache.pig.backend.hadoop.hbase.HBaseStorage('stat:statusCount', '-loadKey true') AS (tweetid: bytearray, statusCount: chararray);
+
+orderedData = ORDER raw_data BY statusCount DESC;
+
+usersHighestStatusCount = LIMIT orderedData 20;
+
+DUMP usersHighestStatusCount;

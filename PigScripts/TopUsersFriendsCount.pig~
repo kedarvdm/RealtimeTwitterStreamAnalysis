@@ -1,0 +1,7 @@
+raw_data = LOAD 'hbase://TwitterUser' USING org.apache.pig.backend.hadoop.hbase.HBaseStorage('info:language stat:friendsCount', '-loadKey true') AS (tweetid: bytearray, language: chararray, friendsCount:chararray);
+
+orderedData = ORDER raw_data BY friendsCount DESC;
+
+topTwentyUsers = LIMIT orderedData 20;
+
+DUMP topTwentyUsers;
