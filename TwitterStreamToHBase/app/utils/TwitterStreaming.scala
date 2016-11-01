@@ -24,10 +24,10 @@ object TwitterStreaming {
   def TwitterStreamUtil {
 
     // Twitter Authentication credentials
-    val consumerKey = "ryxOkcrWcED4fXXtVP0GPRJuA"
-    val consumerSecret = "xWtgC6bScNgDU2LaOl42gAdbvEmHEfCpOJoCPz5yofLKhaU75V"
-    val accessToken = "154482426-WSqWuzGOfhessNSlg8wttW1mSwNazvCDLORTMN78"
-    val accessTokenSecret = "brpAKavkEv6HlsPu5YBgr5tnZEJS1EZdMV4GKufAqmA0e"
+    val consumerKey = ""
+    val consumerSecret = ""
+    val accessToken = ""
+    val accessTokenSecret = ""
 
     System.setProperty("twitter4j.oauth.consumerKey", consumerKey)
     System.setProperty("twitter4j.oauth.consumerSecret", consumerSecret)
